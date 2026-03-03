@@ -1,0 +1,99 @@
+{
+  "owner": {
+    "id": "owner-1",
+    "name": "Вардгес Арутюнян",
+    "nameEn": "Vardges Arutyunyan",
+    "role": "Основатель и CEO",
+    "description": "Предприниматель, AI-интегратор, создатель онлайн-продуктов. Миссия: построить систему AI-агентов, которые автоматизируют бизнес-процессы и заменяют сотрудников.",
+    "status": "online",
+    "currentTask": "Стратегическое управление и развитие бизнеса",
+    "capabilities": ["Стратегия", "Продажи", "Партнёрства", "Продуктовое видение"],
+    "stats": { "tasksCompleted": 45, "projectsManaged": 5, "decisionsPerWeek": 12 }
+  },
+  "mainAgent": {
+    "id": "agent-bond",
+    "name": "Bond",
+    "role": "Главный AI-агент",
+    "platform": "OpenClaw на Mac Mini M4",
+    "model": "Claude + Local LLM",
+    "description": "Центральный агент системы. Координирует все задачи, управляет суб-агентами, ведёт память и документацию. Работает 24/7.",
+    "status": "online",
+    "currentTask": "Управление Mission Control и координация задач",
+    "capabilities": ["Координация задач", "Управление памятью", "Генерация контента", "Мониторинг агентов", "Автоматизация"],
+    "stats": { "tasksCompleted": 128, "uptimePercent": 99.7, "requestsProcessed": 12450 }
+  },
+  "subAgents": [
+    {
+      "id": "agent-charlie",
+      "name": "Чарли",
+      "role": "Разработка",
+      "platform": "Local",
+      "model": "CodeLlama + Cursor",
+      "description": "Агент-разработчик. Пишет код, создаёт интеграции, разрабатывает API. Специализируется на Python, TypeScript, Next.js.",
+      "status": "online",
+      "currentTask": "Разработка лендинга для «50 агентов»",
+      "capabilities": ["Python", "TypeScript", "API разработка", "Интеграции", "DevOps"],
+      "stats": { "tasksCompleted": 34, "linesOfCode": 15200, "bugsFixed": 23 }
+    },
+    {
+      "id": "agent-violet",
+      "name": "Вайолет",
+      "role": "Исследования",
+      "platform": "Cloud",
+      "model": "Claude 3.5 Sonnet",
+      "description": "Исследовательский агент. Анализирует рынок, конкурентов, тренды. Готовит отчёты и рекомендации.",
+      "status": "idle",
+      "currentTask": "Ожидание новой задачи",
+      "capabilities": ["Анализ рынка", "Исследование конкурентов", "Подготовка отчётов", "Стратегический анализ"],
+      "stats": { "tasksCompleted": 18, "reportsGenerated": 12, "insightsFound": 47 }
+    },
+    {
+      "id": "agent-ralph",
+      "name": "Ральф",
+      "role": "Контент",
+      "platform": "Cloud",
+      "model": "GPT-4o",
+      "description": "Контент-агент. Создаёт тексты для рассылок, постов, лендингов. Пишет в стиле, адаптированном для целевой аудитории.",
+      "status": "online",
+      "currentTask": "Подготовка рассылки #12",
+      "capabilities": ["Копирайтинг", "Email-маркетинг", "Соцсети", "SEO-тексты", "Сторителлинг"],
+      "stats": { "tasksCompleted": 42, "contentPieces": 86, "avgEngagement": 4.2 }
+    },
+    {
+      "id": "agent-max",
+      "name": "Макс",
+      "role": "Дизайн",
+      "platform": "Cloud",
+      "model": "Midjourney + DALL-E",
+      "description": "Дизайн-агент. Создаёт визуальный контент: баннеры, иллюстрации, UI-макеты, презентации.",
+      "status": "idle",
+      "currentTask": "Ожидание новой задачи",
+      "capabilities": ["UI/UX дизайн", "Баннеры", "Иллюстрации", "Презентации", "Брендинг"],
+      "stats": { "tasksCompleted": 21, "designsCreated": 58, "avgRating": 4.5 }
+    },
+    {
+      "id": "agent-eva",
+      "name": "Ева",
+      "role": "Аналитика",
+      "platform": "Cloud",
+      "model": "Gemini Pro",
+      "description": "Аналитический агент. Обрабатывает данные, строит отчёты, находит инсайты. Мониторинг KPI и метрик.",
+      "status": "online",
+      "currentTask": "Подготовка отчёта за февраль",
+      "capabilities": ["Анализ данных", "KPI мониторинг", "Прогнозирование", "Визуализация", "A/B тесты"],
+      "stats": { "tasksCompleted": 27, "reportsGenerated": 35, "insightsFound": 62 }
+    },
+    {
+      "id": "agent-leo",
+      "name": "Лео",
+      "role": "Тестирование",
+      "platform": "Local",
+      "model": "Local LLM + Playwright",
+      "description": "Тестировочный агент. Проводит автоматическое тестирование: функциональное, нагрузочное, безопасность. Составляет баг-репорты.",
+      "status": "online",
+      "currentTask": "Тестирование чат-бота турагентства",
+      "capabilities": ["Функциональное тестирование", "Нагрузочное тестирование", "Безопасность", "Баг-трекинг"],
+      "stats": { "tasksCompleted": 19, "bugsFound": 45, "testsRun": 1280 }
+    }
+  ]
+}
