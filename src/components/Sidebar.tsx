@@ -16,13 +16,13 @@ import {
 } from 'lucide-react';
 
 const navItems = [
-  { href: '/mission-control', label: 'Дашборд', icon: LayoutDashboard },
-  { href: '/mission-control/tasks', label: 'Задачи', icon: ListTodo },
-  { href: '/mission-control/calendar', label: 'Календарь', icon: Calendar },
-  { href: '/mission-control/projects', label: 'Проекты', icon: FolderKanban },
-  { href: '/mission-control/memory', label: 'Память', icon: Brain },
-  { href: '/mission-control/docs', label: 'Документы', icon: FileText },
-  { href: '/mission-control/team', label: 'Команда', icon: Users },
+  { href: '/', label: 'Дашборд', icon: LayoutDashboard },
+  { href: '/tasks', label: 'Задачи', icon: ListTodo },
+  { href: '/calendar', label: 'Календарь', icon: Calendar },
+  { href: '/projects', label: 'Проекты', icon: FolderKanban },
+  { href: '/memory', label: 'Память', icon: Brain },
+  { href: '/docs', label: 'Документы', icon: FileText },
+  { href: '/team', label: 'Команда', icon: Users },
 ];
 
 export default function Sidebar() {
@@ -35,8 +35,9 @@ export default function Sidebar() {
   }, [pathname]);
 
   const isActive = (href: string) => {
-    if (href === '/mission-control') return pathname === '/mission-control' || pathname === '/mission-control/';
-    return pathname.startsWith(href);
+    const normalizedPathname = pathname.replace('/mission-control', '') || '/';
+    if (href === '/') return normalizedPathname === '/';
+    return normalizedPathname.startsWith(href);
   };
 
   const sidebarContent = (

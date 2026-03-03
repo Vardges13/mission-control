@@ -130,7 +130,7 @@ export default function DashboardPage() {
           return (
             <Link
               key={card.label}
-              href="/mission-control/tasks"
+              href="/tasks"
               className="bg-bg-surface border border-border rounded-xl p-4 hover:border-accent/30 transition-all duration-200 group"
             >
               <div className="flex items-center justify-between mb-3">
@@ -153,7 +153,7 @@ export default function DashboardPage() {
               <FolderKanban size={20} className="text-accent" />
               Проекты
             </h2>
-            <Link href="/mission-control/projects" className="text-sm text-accent hover:text-accent-hover flex items-center gap-1 transition-colors">
+            <Link href="/projects" className="text-sm text-accent hover:text-accent-hover flex items-center gap-1 transition-colors">
               Все проекты <ArrowRight size={14} />
             </Link>
           </div>
@@ -165,7 +165,7 @@ export default function DashboardPage() {
               return (
                 <Link
                   key={project.id}
-                  href="/mission-control/projects"
+                  href="/projects"
                   className="bg-bg-surface border border-border rounded-xl p-4 hover:border-accent/30 transition-all duration-200"
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -192,7 +192,7 @@ export default function DashboardPage() {
               <Brain size={20} className="text-accent" />
               Активность
             </h2>
-            <Link href="/mission-control/memory" className="text-sm text-accent hover:text-accent-hover flex items-center gap-1 transition-colors">
+            <Link href="/memory" className="text-sm text-accent hover:text-accent-hover flex items-center gap-1 transition-colors">
               Вся память <ArrowRight size={14} />
             </Link>
           </div>
@@ -200,7 +200,7 @@ export default function DashboardPage() {
             {recentMemories.map((mem) => (
               <Link
                 key={mem.id}
-                href="/mission-control/memory"
+                href="/memory"
                 className="block bg-bg-surface border border-border rounded-xl p-3 hover:border-accent/30 transition-all duration-200"
               >
                 <div className="flex items-center gap-2 mb-1">
@@ -235,7 +235,7 @@ export default function DashboardPage() {
           Новый документ
         </button>
         <Link
-          href="/mission-control/tasks"
+          href="/tasks"
           className="flex items-center gap-2 bg-bg-surface border border-border hover:border-accent/30 text-text-primary px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
         >
           <ListTodo size={16} />
